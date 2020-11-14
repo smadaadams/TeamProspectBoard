@@ -24,33 +24,14 @@ ui <- fluidPage(theme = "theme.css",
                              no = tags$i(class = "fa fa-square-o", 
                                          style = "color: white"))
                          )
-                  )#,
-                  # column(3,
-                  #    radioGroupButtons(
-                  #      inputId = "listview",
-                  #      label = "", 
-                  #      choices = c("Table View", "Report View"),
-                  #      selected = "Table View",
-                  #      status = "success"
-                  #    )
-                  # )
+                  )
                 ),
-                
-                # materialSwitch(inputId = "switch", label = "List View", status = "danger"),
-                #  div(style="display:inline-block; margin-right: 25px",
-                #      tags$b("Mobile View"), 
-                #      switchInput(inputId = "mobileview", value = FALSE, inline = TRUE)), 
-                #      br(),
-                # div(style="display:inline-block; margin-right: 25px",
-                #      tags$b("Report View"), 
-                #      switchInput(inputId = "listview", value = FALSE, inline = TRUE)
-                #  ),
                 br(),
                 fluidRow(
                   column(12,
-                         div(style="display:inline-block; padding-right: 25px",downloadButton("downloadList","Download List", class="number"))#,
-                         # div(style="display:inline-block;",actionLink("def", "Glossary")),
-                         #         uiOutput("defUI")
+                         div(style="display:inline-block; padding-right: 25px",
+                             downloadButton("downloadList","Download List", class="number"))
+
                   )
                 ),
                 br(),
@@ -64,9 +45,5 @@ ui <- fluidPage(theme = "theme.css",
                   reactableOutput("board")
                 ),
                 br()
-                # withSpinner(
-                #   reactableOutput("mockDraft2")
-                # ),
-                # uiOutput("loadUI")
                 
 )
