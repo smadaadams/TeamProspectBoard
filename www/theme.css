@@ -1,0 +1,117 @@
+.number {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.team {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  color: 	#484848;
+}
+
+.player {
+  font-weight: bold;
+}
+
+.blurb {
+  line-height: 1.6;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.blurbDesktop {
+  line-height: 1.6;
+  padding-right: 500px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.blurbTable {
+  line-height: 1.6;
+  padding-right: 250px;
+
+}
+
+.hr1 {
+  border-top: 1px solid gray;
+}
+
+.hr2 { 
+  border-top: 1px solid gray;
+  margin-top: 0; margin-bottom: 0; 
+  
+}
+
+.my-header {
+  border-color: white;
+  border-bottom-color: #555;
+   font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Align header text to the bottom */
+.my-header,
+.group-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bio {
+  font-size: 12px;
+}
+
+.iconUp {
+  display:inline;
+  size: 2em;
+  color: green;
+  left: 10px;
+}
+
+.iconDown {
+  display:inline;
+  size: 3em;
+  color: red;
+  left: 10px;
+}
+
+.video {
+   padding-right: 10px;
+  padding-left: 10px;
+}
+
+.iconVid {
+  display:inline;
+  color: red;
+}
+
+.iconReport {
+  display:inline;
+  color: blue;
+}
+
+.border-left {
+  border-left: 2px solid #555;
+ border-bottom: .5px solid #7e7e7e;
+}
+.border-right {
+  border-right: 2px solid #555;
+}
+
+/* Use box-shadow to create row borders that appear behind vertical borders */
+.cell {
+  /*box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);*/
+  border-bottom: .5px solid #7e7e7e;
+  border-left: .5px solid #7e7e7e;
+}
+
+.group-last .cell {
+  box-shadow: inset 0 -2px 0 #555;
+}
+
+.reportTitle {
+  background-color: #7e7e7e;
+  color: white;
+}
